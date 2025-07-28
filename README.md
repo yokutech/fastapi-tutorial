@@ -14,7 +14,7 @@ pyenv virtualenv 3.11.0 my_fastapi_env
 
 ```sh
 pyenv activate my_fastapi_env
-pip install fastapi uvicorn
+pip install -r requirements.txt
 ```
 
 ### 3. Run the Server
@@ -27,6 +27,5 @@ uvicorn main:app --reload
 
 ### 4. Access the API
 
-- Visit http://127.0.0.1:8000 to test the API.
 - Visit http://127.0.0.1:8000/docs for the Swagger UI.
 - Visit http://127.0.0.1:8000/redoc for the ReDoc documentation.
